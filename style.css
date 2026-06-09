@@ -199,7 +199,7 @@ body {
 /* Projects Container */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -219,8 +219,11 @@ body {
 
 .project-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    padding: 10px;
 }
 
 .project-card-content {
